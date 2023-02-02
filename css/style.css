@@ -1,0 +1,309 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    image-rendering: pixelated;
+}
+
+a{
+  text-decoration: none;
+}
+
+.line{
+  max-width: 100%;
+  height: auto;
+}
+ 
+/* localNav */
+.local_nav {
+  list-style-type: none;
+  position: fixed;
+  right: 1%;
+  bottom: 88px;
+  border-radius: 8px;
+  background-color: rgb(129, 75, 75);
+}
+
+@media (min-width: 767px){
+  .local_nav{
+    bottom: 35%;
+  }
+}
+
+
+.local_nav_item{
+  opacity: 0.9;
+  padding: 6px 6px;
+  cursor: pointer;
+}
+
+.local_nav_item:hover{
+  background-color: rgb(207, 144, 93);
+    border-radius: 8px;
+}
+
+@media (min-width: 767px){
+  #local_nav_google_form{
+    display: none;
+  }
+}
+
+.local_nav_text{
+  text-align: center;
+  color: rgb(255, 253, 243);
+  font-size: 13px;
+}
+
+@media (max-width: 767px){
+  .local_nav{
+    opacity: 0.8;
+    right: 0;
+  }
+}
+
+/* header */
+#menu{
+  text-align: center;
+}
+
+.nav-item:hover{
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+  @media (max-width: 1200px) {
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding-bottom: 3%;
+      }
+      /* .nav_img {
+      flex-shrink: 0;
+      } */
+    }
+
+    @media (min-width: 1200px) {
+    .nav-item{
+      padding-right: 48px;
+      padding-top: 10px;
+    } 
+  }
+
+.navbar{
+    background-color: rgb(207, 144, 93);
+    z-index: 99;
+  }
+
+.brand{
+  height: 128px;
+  padding-left: 3%;
+}
+
+@media (max-width: 1200px) {
+  .brand{height: 64px;}
+}
+
+.brand_footer{
+  height: 96px;
+}
+
+.intro_img{
+height: 256px;
+}
+
+.nav_img{
+  height: 96px;
+  width: 96px;
+}
+
+/* footer */
+#footer{
+  padding-top: 1%;
+  margin-top:5%;
+  background-color: rgb(207, 144, 93);
+ }
+ 
+ .title{
+  display: flex;
+  justify-content:center ;
+  height: 48px;
+}
+
+ .footerIconList{
+   display: flex;
+   justify-content:center ;
+   align-items: center;
+ }
+
+ @media (max-width: 767px) {
+  .footerIconList{
+    padding-top:2% ;
+  } 
+}
+
+.footerIcon{
+  padding-right: 1%;
+  transition: transform 0.3s ease-in-out; 
+}
+
+ .footerIcon:hover{
+   cursor: pointer;
+   transform: translateY(-10px); 
+ }
+
+/* common */
+.hover-dark:hover{
+  filter: brightness(80%);
+}
+
+.actical-title-highlight{
+  font-weight:bold; 
+  color:rgb(242, 152, 103);
+}
+
+/* banner */
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  color: rgb(255, 242, 242);
+  position: absolute;
+  bottom:  0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px #323232, 0 0 3px #323232, 0 0 3px #323232, 0 0 3px #323232; font-weight: bold;
+}
+
+/* article */
+.share_social{
+  cursor: pointer;
+}   
+
+.share_social:hover{
+  filter: brightness(70%);
+}   
+
+.article-holder{
+  background-color: #ffb7771e;
+  margin-top: 50px;
+}
+
+
+/* filter */
+.filter-btns {
+  display: flex;
+  justify-content: center;
+}
+.filter-btns button {
+  margin: 0 10px;
+}
+/* .card {
+  display: none;
+} */
+
+/*goTop*/
+.goTopBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 1%;
+z-index: 98;
+border: none;
+outline: none;
+background-color:rgb(156, 44, 44);
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 10px;
+font-size: 18px;
+opacity: 0.7;
+}
+
+.goTopBtn:hover{
+opacity: 1;
+cursor: pointer;
+}
+
+@media (max-width: 767px){
+.goTopBtn{
+right: 0;
+}
+}
+
+
+
+
+
+
+
+/* about */
+.icon{
+  height: 256px;
+  width: 256px;
+    display: flex;
+    justify-content: center;
+}
+
+/* information */
+
+/* gallery */
+
+/* .gallery_img.active {
+  display: block;
+} */
+
+@media (min-width: 767px){
+.gallery_img{
+  width: 50%;
+}
+}
+
+@media (max-width: 767px){
+.gallery_img{
+  width: 100%;
+}
+}
+
+
+/* commission */
+
+/* commissionForm */
+.formTitle{
+  padding-bottom: 3%;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.formTitle,.formText{
+  line-height: 170% ;
+}
+
+.formText{
+  font-size: 16px;
+}
+
+/* market */
+/* tutorial */
+/* contact */
+
+
+/* keyframes_animation */
+.icon,.card-img-top {
+  opacity: 1;
+  animation: fade 1s ;
+}
+
+/* keyframes */
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+/* .text{
+  margin: auto;
+  line-height: 150%;
+} */
